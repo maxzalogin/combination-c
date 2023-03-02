@@ -2,10 +2,10 @@ CC=gcc
 CFLAGS=-Wall -Wextra -Werror
 BUILD=build/
 
-combin:
-	$(CC) $(CFLAGS) combin.c -o $(BUILD)combin
+main:
+	$(CC) $(CFLAGS) main.c -o $(BUILD)main
 clean:
-	rm $(BUILD)combin
+	rm $(BUILD)main
 
 run:
-	build/combin
+	build/main
